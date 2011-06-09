@@ -163,7 +163,7 @@ static BOOL is_leap_year(unsigned year);
 	NSAssert(timeSep != '\0', @"Time separator must not be NUL.");
 
 	BOOL isValidDate = ([string length] > 0U);
-	NSTimeZone *timeZone = nil;
+	NSTimeZone *timeZone = self.defaultTimeZone;
 
 	const unsigned char *ch = (const unsigned char *)[string UTF8String];
 

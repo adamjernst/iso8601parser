@@ -653,6 +653,7 @@ static BOOL is_leap_year(unsigned year);
 	formatter.formatterBehavior = NSDateFormatterBehavior10_4;
 	formatter.dateFormat = dateFormat;
 	formatter.calendar = calendar;
+	formatter.timeZone = timeZone;
 
 	NSString *str = [formatter stringForObjectValue:date];
 
